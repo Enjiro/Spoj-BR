@@ -32,8 +32,6 @@ void dfs(int x)
 
 int main()
 {
-	//freopen("in.txt","r",stdin);
-	//freopen("out.txt","w",stdout);
 	int n;
 	scanf("%d", &n);
 	for(int i=0; i<n-1; i++)
@@ -51,14 +49,14 @@ int main()
 	for(int i=0; i<n; i++)
 		vis[i]=false;
 	
-	ll total=(ll) n * (n-1)/2;
+	ll total=(ll)n*(n-1)/2;
 	for(int i=0; i<n; i++)
 	{
 		if(!vis[i])
 		{
 			cnt=0;
 			dfs(i);
-			total-=(ll)cnt * (cnt-1)/2;
+			total-=(ll)cnt*(cnt-1)/2;
 		}
 	}
 	printf("%lld\n", total);
