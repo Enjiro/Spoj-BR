@@ -12,7 +12,7 @@ typedef unsigned long long ull;
 #define pq priority_queue
 #define F first
 #define S second
-#define MAXN 100035
+#define MAXN 100000
 
 vector<int>graph[MAXN];
 bool vis[MAXN];
@@ -48,7 +48,9 @@ int main()
 		}
 	}
 
-	memset(vis, false, n);
+	for(int i=0; i<n; i++)
+		vis[i]=false;
+	
 	ll total=(ll) n * (n-1)/2;
 	for(int i=0; i<n; i++)
 	{
