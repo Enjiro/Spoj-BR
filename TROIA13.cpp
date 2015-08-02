@@ -3,7 +3,6 @@
 using namespace std;
 
 typedef long long ll;
-typedef unsigned long long ull;
 
 #define INF 0x3F3F3F3F
 #define LINF 0x3F3F3F3F3F3F3F3FLL
